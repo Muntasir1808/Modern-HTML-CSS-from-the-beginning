@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .item {
+            background: #f4f4f4;
+            border: #ccc solid 2px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            /* width: 200px; */
+            /* flex: grow shrink basis */
+            /* flex: 1 0 200px */
+            /* The above line means that flew will grow, won't shrink and they won't grow small than 200px */
+            flex: 1;
+           
+        }
+        .flex-container {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* aligns the items in the cross axis (for row it aligns the columns) */
+            align-items: center;
+            align-items: flex-start;
+            align-items: flix-end;
+            align-items: stretch;
+            /* Main axis align */
+            justify-content: center;
+            /* creates equal space around the items */
+            justify-content: space-around;
+            height: 50vh;
+        }
+        .item-1 {
+            align-self: flex-start;
+        }
+        .item-3 {
+            align-self: flex-end;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+</html>

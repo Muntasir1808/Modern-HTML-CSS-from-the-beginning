@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw Units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background: #333 url(/img/laura-chouette-t6hNUc8vspA-unsplash.jpg) no-repeat center center/cover;
+            color: #fff;
+            /* it means that height is 100% of it's container that is the body */
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 5rem;
+        }
+
+        header h1{
+            font-size: 3rem;
+        }
+
+        header p{
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f4f4f4;
+            text-decoration: none;
+            color: #333;
+            padding:0.75rem 2rem;
+        }
+        @media(max-height: 450px){
+            header {
+                padding-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Welcome to our website</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eaque illo expedita odit quo maiores error sunt animi impedit veritatis.</p>
+        <a href="" class="btn">Ream more</a>
+    </header>
+    <section>
+        <h3>About our company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique minus tempore fuga saepe, ab earum accusamus quod consequatur expedita, recusandae voluptate repellat nobis temporibus? Totam repellendus maxime officiis aperiam.</p>
+    </section>
+</body>
+</html>

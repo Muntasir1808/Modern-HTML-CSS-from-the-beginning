@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, span, id, class</title>
+
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance {
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<!--There is no functional difference between id and class but convention is same id is used only once and same class can repeat-->
+<!--div is a block level element whereas span is inline element. If we want to color certain portion of a paragraph differently then using div separates those words as well but span just colors those words. See examples with class enhance-->
+<body>
+    <div id="main-header" class="card">
+        <h1>My website</h1>
+        <p>This is my website</p>
+    </div>
+    <!--When we need to write id along with div, div#id_name-->
+    <div id="main-nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </div>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem <div class="enhance">ipsum dolor sit amet</div> consectetur adipisicing elit. Sed amet provident tenetur, sint culpa quos debitis corporis sunt minima a voluptatem consequuntur eum tempore illum corrupti temporibus, nulla atque? Voluptatem, provident soluta pariatur recusandae corrupti deserunt quos, debitis quod ullam autem amet, aliquid maiores aperiam quam ex repudiandae minima quo.</p>
+        <p>Lorem <span class="enhance">ipsum dolor sit amet</span> consectetur adipisicing elit. Sed amet provident tenetur, sint culpa quos debitis corporis sunt minima a voluptatem consequuntur eum tempore illum corrupti temporibus, nulla atque? Voluptatem, provident soluta pariatur recusandae corrupti deserunt quos, debitis quod ullam autem amet, aliquid maiores aperiam quam ex repudiandae minima quo.</p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: 431/9 Malibag, Dhaka</li>
+            <li>Phone: 012334</li>
+            <li>Email: john@gmail.com</li>
+        </ul>
+    </div>
+    
+    <div id="footer">
+        Copyright &copy; 2024
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            background: white;
+            width: 200px;
+            height: 200px;
+            /* when we add position relative, we can add t/b/l/r */
+            position: relative;
+            /* animation-name: animate1;
+            animation-duration: 5s; */
+            /* animation-iteration-count: infinite */
+            /* animation-iteration-count: 1; */
+            /* if we want the animation at the stretched state */
+            /* animation-fill-mode: forwards; */
+            /* delaying the start of the animation */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse;
+            animation-direction: alternate;
+            animation-timing-function: ease-in; */
+            animation: animate1 5s forwards 1s ease-in-out;
+        }
+        @keyframes animate1 {
+            from {
+                top: 0;
+                width: 200px;
+            }
+            to {
+                width: 600px;
+                background-color: red;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

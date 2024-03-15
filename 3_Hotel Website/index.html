@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the most extraordinary hotel in Dhaka">
+    <meta name="keywords" content="hotel, dhaka, elephant road hotel">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+    <title>Hotel BT | Welcome</title>
+    <script src="https://kit.fontawesome.com/c618b88270.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <header>
+        <nav id="navbar">
+            <!--Container class is inside the navbar because we just to text get wrapped in the middle when we stretch out but not the navbar, we want the navbar taking the whole space-->
+            <div class="container">
+            <h1 id="logo"><a href="index.html">HBT</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">contact</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1><span class="text-primary">Enjoy</span>Your Stay</h1>
+                    <!--for paragraph another class is used because this paragraph's property would be different than the others-->
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure corporis neque. Voluptatibus saepe sit optio. Voluptate in libero alias.</p>
+                    <a class="btn" href="about.html">About Our Hotel</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2><span class="text-primary">The History </span>of our hotel</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem libero accusamus dignissimos eius, magnam architecto earum labore, illo corporis inventore sint </p>
+            <a href="about.html" class="btn btn-light">Read More</a>
+        </div>
+
+    </section>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam maiores ducimus nam perspiciatis placeat veniam?</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fa-solid fa-utensils fa-3x"></i>
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam maiores ducimus nam perspiciatis placeat veniam?</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fa-solid fa-dumbbell fa-3x"></i>
+            <h3>Fitness Room</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam maiores ducimus nam perspiciatis placeat veniam?</p>
+        </div>
+    </section>
+    <!-- This is done to clear the effect of float. It is used to ensure footer stays below the float-->
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>Hotel BT &copy;2024, All Rights Reserved</p>
+    </footer>
+ </body>
+ </html>

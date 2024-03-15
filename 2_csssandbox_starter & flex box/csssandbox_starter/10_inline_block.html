@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline & Block Styling</title>
+  <style>
+   li {
+    display: inline;
+   }
+   li a {
+    padding: 20px;
+   }
+   /* image is an inline element, we want this in the middle and margin auto doesn't make any difference so need to make display:block */
+   img {
+    display: block;
+    margin: auto;
+   }
+   .box {
+    /* We wanted the boxes as horizontal but width is also limited that's why display:inline won't work  */
+    width: 32.8%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+   }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+
+  </ul>
+  <br><br>
+
+  <img src="/img/leaf.png" alt="">
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus minus, facere architecto molestias minima sapiente enim animi eaque ab.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus minus, facere architecto molestias minima sapiente enim animi eaque ab.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus minus, facere architecto molestias minima sapiente enim animi eaque ab.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+
+  <style>
+    /* body styling */
+    body {
+      background-color: #333;
+    }
+    /* . is used for class and #is used for id */
+    .primary-heading {
+      color: blue;
+    }
+
+    #welcome {
+      background-color: #96a1b1;
+    }
+    /* Now I want to some styling for both of div's welcome and about */
+    /* Multiple selectors (we can also add p, h2 etc by just adding ,*/
+    #welcome, #about {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    /* Target specific paragraph inside specific div */
+    /* Nested selectors (Don't use , here like multiple selectors) */
+    #welcome p{
+      font-size: 20px; 
+    }
+
+    #about {
+      color: white
+    }
+
+    
+
+    
+  </style>
+
+</head>
+<body>
+  <div id="welcome"> <!--This makes sense because we're not going have another welcome div or another about div-->
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut laudantium optio soluta, ipsum natus temporibus veritatis veniam ea deleniti.</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel alias molestiae ab accusantium consequuntur adipisci voluptatibus! Porro ea hic aspernatur?</p>
+  </div>
+</body>
+</html>
